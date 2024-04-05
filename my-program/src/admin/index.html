@@ -1,0 +1,457 @@
+<?php
+session_start();
+include "proses/koneksi.php";
+?>
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>SHIL STORE</title>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<!-- jQuery (necessary JavaScript plugins) -->
+<script type='text/javascript' src="js/jquery-1.11.1.min.js"></script>
+<!-- Custom Theme files -->
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+<link href="css/style2.css" rel='stylesheet' type='text/css' />
+<link href="css/dropdown.css" rel='stylesheet' type='text/css' />
+<link rel="shortcut icon" href="images/icon.png" type="image/x-icon"> 
+<!-- Custom Theme files -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!--webfont-->
+<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+<!-- start menu -->
+<link href="css/megamenu.css" rel="stylesheet" type="text/css" media="all" />
+<script type="text/javascript" src="js/megamenu.js"></script>
+<script>$(document).ready(function(){$(".megamenu").megamenu();});</script>
+<!-- mulai slider -->
+<link rel="stylesheet" href="css/fwslider.css" media="all">
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/fwslider.js"></script>
+<script src="js/menu_jquery.js"></script>
+<!--akhir slider -->
+</head>
+<body>
+<!-- header_atas -->
+<div class="top_bg">
+<div class="container">
+<div class="header_top">
+	<div class="top_left">
+		<h2>Shil Store Online Shop</h2>
+	</div>
+	<div class="top_right">
+		<ul>
+		
+		<li><a href="#">Call Us :(089)629756872</a></li>|
+			
+		
+			<li class="login" >
+						<div id="loginContainer"><a href="#" id="loginButton"><span>Login</span></a>
+						    <div id="loginBox">                
+						        <form id="loginForm" action="proses/login-proses.php" method="post">
+								
+						                <fieldset id="body">
+						                	<fieldset>
+						                          <label for="username"><font color="grey"></font> </label>
+						                         <input type="text" name="username" id="nama" placeholder="Username" required />
+						                    </fieldset>
+						                    <fieldset>
+						                            <label for="password"><font color="grey"></font></label>
+						                            <input type="password" name="password" id="password" placeholder="Password" required />
+						                     </fieldset>
+						                    <input type="submit" id="login" value="Masuk">
+						                	
+						            	</fieldset>
+						           
+							 </form>
+				        </div>
+			      </div>
+			</li>
+		</ul>
+	</div>
+	<div class="clearfix"> </div>
+</div>
+</div>
+</div>
+<!-- header -->
+<div class="header_bg">
+<div class="container">
+	<div class="header">
+		<div class="logo">
+			<a href="index.php"><img src="images/logoatas.png"  width="40%" alt=""/> </a>
+		</div>
+		<!-- mulai header_kanan -->
+		<div class="header_right">
+		<div class="create_btn">
+			<a class="arrow"  href="registration.php">Buat akun<img src="images/right_arrow.png" alt=""/>  </a>
+		</div>
+		
+		<div class="search">
+		    <form>
+		    	<input type="text" value="" placeholder="search...">
+				<input type="submit" value="">
+			</form>
+		</div>
+		<div class="clearfix"> </div>
+		</div>
+		<!-- muali header menu -->
+		<ul class="megamenu skyblue">
+			<li><li class="active grid"><a class="color1" href="index.html">Home</a></li>
+			<li class="grid"><a class="color2" href="#">Tentang Shil.Store</a>
+				<div class="megapanel">
+					<div class="row">
+						<div class="col1">
+							<div class="h_nav">
+								<h4>Profil</h4>
+								<ul>
+										<li><a href="#">Tentang Shilstore</a></li>
+								<li><a href="#">Visi</a></li>
+								<li><a href="#">Misi</a>
+								<li><a href="#">Tujuan</a></li>	
+								</ul>	
+							</div>							
+						</div>
+						<div class="col1">
+							<div class="h_nav">
+								<h4>Produk</h4>
+								<ul>
+									<li><a href="#">PJKR</a></li>
+								<li><a href="#">Pendidikan Bahasa inggris</a></li>
+								<li><a href="#">PPKN</a>
+								<li><a href="#">Magister IPS</a></li>
+								</ul>	
+							</div>							
+						</div>
+						<div class="col1">
+							<div class="h_nav">
+								<h4>Pulsa</h4>
+								<ul>
+								<li><a href="#">Materi</a></li>
+								<li><a href="#">Nilai</a></li>
+								<li><a href="#">Jadwal</a>
+								<li><a href="#">Group</a></li>
+								</ul>	
+							</div>						
+						</div>
+						<div class="col1">
+							<div class="h_nav">
+								<h4>Bisnis</h4>
+								<ul>
+										<li><a href="perpus.php">Perpustakaan</a></li>
+								<li><a href="laboratorium.php">Lab.Komputer - Bahasa</a></li>
+								<li><a href="hot-spot.php">Area HOT spot - internet</a>
+								<li><a href="lapangan.php">Ruang Belajar</a></li>
+								<li><a href="#">Sarana Ibadah</a></li>
+								<li><a href="#">Area Parkir</a></li>
+								</ul>	
+							</div>												
+						</div>
+						<div class="col1">
+							<div class="h_nav">
+								<h4>Layanan</h4>
+								<ul>
+										<li><a href="#">Jurnal</a></li>
+								<li><a href="#">Digital Learning</a></li>
+								<li><a href="#">Digital Library</a>
+								<li><a href="#">SIMAK</a></li>
+								<li><a href="#">Tracer Study Alumni</a></li>
+								<li><a href="#">SI-EDOM</a></li>
+								</ul>	
+							</div>						
+						</div>
+						<div class="col1">
+							<div class="h_nav">
+								<h4>Organisasi</h4>
+								<ul>
+										<li><a href="#">Pimpinan STKIP</a></li>
+								<li><a href="struktur-organisasi.php">Struktur Organisasi</a></li>
+								<li><a href="senat-akademik.php">Senat Akademik</a>
+								<li><a href="#">Biro</a></li>
+								<li><a href="#">Lembaga</a></li>
+								<li><a href="#">UPT</a></li>
+								</ul>	
+							</div>
+						</div>
+						
+					</div>
+					<div class="row">
+						<div class="col2"></div>
+						<div class="col1"></div>
+						<div class="col1"></div>
+						<div class="col1"></div>
+						<div class="col1"></div>
+					</div>
+    				</div>
+				</li>
+			<li class="grid"><a class="color4" href="#">Bisnis</a>
+			<li><a class="color7" href="#">Promo</a>
+			<li><a class="color6" href="#">Testimoni</a>
+			<li><a class="color6" href="#">Bantuan</a>
+				
+				
+				
+			
+		 </ul> 
+	</div>
+</div>
+</div><!-- akhir menu -->
+<!-- kontent -->
+<div class="container">
+<div class="main">
+	<div class="row content_top">
+		<div class="col-md-9 content_left">
+	<!-- mulai slider -->
+    <div id="fwslider">
+        <div class="slider_container">
+            <div class="slide"> 
+                <!-- Slide image -->
+                    <img src="images/busines.jpg" class="img-responsive" alt=""/>
+                <!-- /Slide image -->
+            </div>
+            <!-- /Duplicate to create more slides -->
+            <div class="slide">
+                <img src="images/busines.jpg" class="img-responsive" alt=""/>
+            </div>
+            
+            <!--/slide -->
+        </div>
+        <div class="timers"></div>
+        <div class="slidePrev"><span></span></div>
+        <div class="slideNext"><span></span></div>
+    </div>
+	
+<!--konten scroller-->
+<script type="text/javascript" src="js/jquery.easy-ticker.js"></script>
+									<script type="text/javascript">
+									$(document).ready(function(){
+										$('#demo').hide();
+										$('.vticker').easyTicker();
+									});
+									</script>
+	<!-- akhir  slider -->
+		</div>
+	
+		<div class="col-md-right-1">
+	  <div class="w_sidebar">
+		
+		
+		<section  class="sky-form">
+					<h4></h4>
+						<div class="row1-3 scroll-pane">
+								<center><h3>Testimoni</h3></center>
+	<div class="latest-tweets-box">	
+<div class="vticker">
+								  <ul>
+								<?php
+$batas=5;
+$no=1;
+$paging=$_GET['paging'];
+if(empty($paging))
+	{
+	$posisi=0;
+	$paging=1;
+	}
+
+else{
+	$posisi=($paging-1) * $batas;
+	}
+$no=$posisi+1;
+$query=mysql_query("select * from tbl_status order by id DESC limit $posisi,$batas");
+while($r=mysql_fetch_array($query))
+{
+echo"
+<div class='grid_list'>
+									  <li>
+									  	<p>$r[quotes] </p>
+									  	<span>14 mins ago</span>
+									  </li></div>
+";
+}
+?>
+
+								  </ul>
+								</div>		
+		</div>
+						</div>
+		</section>
+		
+	</div>
+   </div>
+
+	
+		
+		</div>
+		<div class="clearfix"></div>
+	</div>
+	<div class="clearfix"></div>
+	<!-- mulai content -->
+	<div class="single-bottom2">
+					<center><h6>Promo</h6></center>
+						<!-- mulai isi konten -->
+						  
+						 <?php
+						
+$batas=3;
+$no=1;
+$paging=$_GET['paging'];
+if(empty($paging))
+	{
+	$posisi=0;
+	$paging=1;
+	}
+
+else{
+	$posisi=($paging-1) * $batas;
+	}
+$no=$posisi+1;
+$query=mysql_query("select * from tbl_info order by id_hubungi DESC limit $posisi,$batas");
+while($r=mysql_fetch_array($query))
+{
+echo"<div class='container-posting'>
+	<div class='content-posting'>
+		</div> 
+	 <div class='product'>
+								<div class='product-img'>
+		                           <img src='images/pick.jpg' class='img-responsive ' alt=''/>
+		                       </div>
+		                       <div class='prod2-desc'>
+		                           <h5><B><a class='product_link' href='#'>$r[nama]</a></B></h5>
+		                           <p class='product_descr'>$r[pesan]</p>									
+							   </div>
+							   <div class='clearfix'></div>
+					     
+						 
+						 <div class='clearfix'></div>
+				     </div>
+	<footer-post>
+		<ul class='s_icons'>  
+					
+				</ul>
+</div> <br>";
+}
+?>
+					
+
+ <div class="container-posting">
+	
+	<div class="content-posting">
+		
+	</div> <!-- akhr isi kontent -->
+	<div class="product">
+						  
+								<div class="product-img">
+		                           <img src="images/fs14.jpg" class="img-responsive " alt=""/>
+		                       </div>
+		                       <div class="prod1-desc">
+		                           <h5><B><a class="product_link" href="#">Jarvis</a></B></h5>
+		                           <p class="product_descr"> Diberitahukan kepada semua mahasiswa, agar berkumpul di aula </p>									
+							 
+							   </div>
+							  <div class="clearfix">	</div>
+							  
+			
+					      </div>
+	<footer-post>
+		<ul class="s_icons">  
+					<li><a href="#"><img src="images/s_icon1.png" alt=""></a></li>
+					<li><a href="#"><img src="images/s_icon2.png" alt=""></a></li>
+					<li><a href="#"><img src="images/s_icon3.png" alt=""></a></li>
+					<li><span></span></li>
+				</ul>
+	</footer>
+</div> 
+				    
+		   	  </div><br>
+	<!-- akhir content -->
+</div>
+</div>
+<!-- footer_atas -->
+
+<div class="footer_top">
+ <div class="container">
+	<div class="span_of_4">
+	<div class="span1_of_4">
+			<h4>Organisasi</h4>
+			<ul class="f_nav">
+				<li><a href="#">Pimpinan STKIP</a></li>
+				<li><a href="#">Struktur organisasi</a></li>
+				<li><a href="#">Senat akademik</a></li>
+				<li><a href="#">Biro</a></li>
+				<li><a href="#">Lembaga</a></li>
+				<li><a href="#">UPT</a></li>
+				
+			</ul>						
+					
+		</div>
+		
+		<div class="span1_of_4">
+			<h4>Program studi</h4>
+			<ul class="f_nav">
+				<li><a href="#">PJKR</a></li>
+				<li><a href="#">Pendidikan B.inggris</a></li>
+				<li><a href="#">PPKN</a></li>
+				<li><a href="#">Magister IPS</a></li>
+				
+			</ul>				
+					
+		</div>
+		<div class="span1_of_4">
+			<h4>Fasilitas</h4>
+			<ul class="f_nav">
+				<li><a href="#">Perpustakaan</a></li>
+				<li><a href="#">Lab komputer</a></li>
+				<li><a href="#">Area Hotspot</a></li>
+				<li><a href="#">Ruang belajar</a></li>
+				<li><a href="#">Sarana ibadah</a></li>
+				<li><a href="#">Area Parkir</a></li>
+				<li><a href="#">Lapangan olahraga</a></li>
+				<li><a href="#">Gym</a></li>
+				
+			</ul>				
+					
+		</div>
+		<div class="span1_of_4">
+			<h4>Layanan</h4>
+			<ul class="f_nav">
+				<li><a href="#">Digital learning</a></li>
+				<li><a href="#">Jurnal</a></li>
+				<li><a href="#">Digital library</a></li>
+				<li><a href="#">SIMAK</a></li>
+				<li><a href="#">Tracer Study alumni</a></li>
+				<li><a href="#">SI-EDOM</a></li>
+				
+			</ul>			
+
+		<div class="clearfix"></div>
+		</div>
+		
+		<div class="clearfix"></div>
+		<div class="span_of_2">
+		<div class="span1_of_2">
+			
+			<p> Call us: (022)6630345</p>
+			<div class="social-icons">
+				     <ul>
+				        <li><a href="#" target="_blank"></a></li>
+				        <li><a href="#" target="_blank"></a></li>
+				        <li><a href="#" target="_blank"></a></li>
+				        <li><a href="#" target="_blank"></a></li>
+				        <li><a href="#" target="_blank"></a></li>
+					</ul>
+			</div>
+		</div>
+		
+		<div class="clearfix"></div>
+		</div>
+  </div>
+</div>
+<!-- footer bawah -->
+<div class="footer">
+ <div class="container">
+	<div class="copy">
+		<p class="link">&copy; <a href="#"> STKIP Pasundan Cimahi</a></p>
+	</div>
+ </div>
+</div>
+</body>
+</html>
